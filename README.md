@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @smallvi
-- 👀 Laravel, JQuery, REST API, Bootstrap, TailwindCSS, html5, MySql, MsSql
+- 👋 Hi, I’m Yeo
+- 👀 Skills: Laravel, JQuery, REST API, Bootstrap, TailwindCSS, html5, MySql, MsSql
 - 📫 Reach me @ smallvi@gmail.com
 
 <!---

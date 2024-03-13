@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @smallvi
-- 👀 I’m interested in html, CSS, php, javascript and bla bla bla
-- 🌱 I’m currently learning flutter
+- 👀 Laravel, JQuery, REST API, Bootstrap, TailwindCSS, html5, MySql, MsSql
 - 📫 Reach me @ smallvi@gmail.com
 
 <!---

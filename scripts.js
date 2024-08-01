@@ -12,9 +12,9 @@ function scrollToAnchor(aid) {
 $('.nav-link').on('click', function (e) {
     e.preventDefault();
 
-    $('.nav-link').removeClass('font-black text-gray-100 scale-125');
+    $('.nav-link').removeClass('font-black text-gray-50');
 
-    $(this).addClass('font-black text-gray-100 scale-125');
+    $(this).addClass('font-black text-gray-50');
 
     const targetId = $(this).attr('href');
     scrollToAnchor(targetId);
@@ -36,8 +36,8 @@ $(window).on('scroll', function () {
         if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
             var id = $(this).attr('id');
 
-            navLinks.removeClass('font-black text-gray-100 scale-125');
-            $('a[href="#' + id + '"]').addClass('font-black text-gray-100 scale-125');
+            navLinks.removeClass('font-black text-gray-50');
+            $('button[href="#' + id + '"]').addClass('font-black text-gray-50');
         }
     });
 });

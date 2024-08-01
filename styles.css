@@ -36,7 +36,8 @@
 .button {
     position: relative;
     overflow: hidden;
-    padding: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 .button::before {
@@ -48,17 +49,14 @@
     height: 100%;
     background-color: #4A90E2;
     transition: width 0.3s ease;
-    /* 动画过渡效果 */
     z-index: 0;
 }
 
 .button:hover::before {
     width: 100%;
-    /* Hover时圆形变成药丸的宽度 */
 }
 
 .button span {
     position: relative;
     z-index: 1;
-    /* 文字在圆形上方显示 */
 }

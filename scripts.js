@@ -1,7 +1,12 @@
+var isScrolling = false;
+
 // Click to scroll
 function scrollToAnchor(aid) {
     var aTag = $(aid);
-    $('html,body').animate({ scrollTop: aTag.offset().top }, 'slow');
+    isScrolling = true;
+    $('html,body').animate({ scrollTop: aTag.offset().top }, 'slow', function () {
+        isScrolling = false;
+    });
 }
 
 $('.nav-link').on('click', function (e) {
@@ -20,10 +25,12 @@ var sections = $('div[id^="section"]');
 var navLinks = $('.nav-link');
 
 $(window).on('scroll', function () {
+    if (isScrolling) return;
+
     var currentScroll = $(this).scrollTop();
 
     sections.each(function () {
-        var sectionTop = $(this).offset().top - 70; // Adjust for fixed nav height
+        var sectionTop = $(this).offset().top - 70;
         var sectionBottom = sectionTop + $(this).outerHeight();
 
         if (currentScroll >= sectionTop && currentScroll < sectionBottom) {

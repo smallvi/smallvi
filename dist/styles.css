@@ -688,6 +688,18 @@ video {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -730,6 +742,18 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
 }
 
 .basis-10\/12 {
@@ -1325,6 +1349,14 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
+  .lg\:h-48 {
+    height: 12rem;
   }
 
   .lg\:max-h-72 {

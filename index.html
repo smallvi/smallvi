@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
-<body class="text-gray-400 noto">
+<body>
     <div class="flex flex-col md:flex-row">
         <!-- Header -->
         <div
@@ -26,28 +26,22 @@
                 <div>
                     <div class="mt-10 mb-3 text-gray-300 md:mt-0 text-7xl concert-one-regular">Zi Wei Yeo</div>
                     <div class="mb-10">Laravel Artisan, Senior Web Developer</div>
-
                     <!-- Navigation -->
                     <div>
                         <div class="hidden md:block md:mt-10">
-                            <div><button href="#section-about"
-                                    class="inline-block px-4 py-2 transition ease-in-out delay-150 button nav-link hover:text-gray-100"><span>About</span></button>
+                            <div><button href="#section-about" class="btn nav-link"><span>About</span></button>
                             </div>
                             <div><button href="#section-experience"
-                                    class="inline-block px-4 py-2 transition ease-in-out delay-150 button nav-link hover:text-gray-100"><span>Experience</span></button>
+                                    class="btn nav-link"><span>Experience</span></button>
                             </div>
-                            <div><button href="#section-education"
-                                    class="inline-block px-4 py-2 transition ease-in-out delay-150 button nav-link hover:text-gray-100"><span>Education</span></button>
+                            <div><button href="#section-education" class="btn nav-link"><span>Education</span></button>
                             </div>
-                            <div><button href="#section-skill"
-                                    class="inline-block px-4 py-2 transition ease-in-out delay-150 button nav-link hover:text-gray-100"><span>Skills</span></button>
+                            <div><button href="#section-skill" class="btn nav-link"><span>Skills</span></button>
                             </div>
-                            <div><button href="#section-project"
-                                    class="inline-block px-4 py-2 transition ease-in-out delay-150 button nav-link hover:text-gray-100"><span>Projects</span></button>
+                            <div><button href="#section-project" class="btn nav-link"><span>Projects</span></button>
                             </div>
                         </div>
                     </div>
-
                     <!-- Avatar -->
                     <div class="mt-10">
                         <img class="object-cover w-full h-48 lg:h-full lg:w-80 brightness-90" src="./images/avatar.jpg"
@@ -57,8 +51,7 @@
                     <div class="flex justify-center mt-10 md:justify-start">
                         <div class="grid grid-cols-4 gap-6">
                             <!-- Github -->
-                            <a href="https://github.com/smallvi" class="hover:scale-150 hover:text-white"
-                                target="_blank">
+                            <a href="https://github.com/smallvi" class="social-btn" target="_blank">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                                         <path
@@ -66,10 +59,8 @@
                                     </svg>
                                 </span>
                             </a>
-
                             <!-- Facebook -->
-                            <a href="https://www.facebook.com/zwei.yeo" class="hover:scale-150 hover:text-white"
-                                target="_blank">
+                            <a href="https://www.facebook.com/zwei.yeo" class="social-btn" target="_blank">
                                 <span class="[&>svg]:h-5 [&>svg]:w-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
                                         <path
@@ -77,10 +68,8 @@
                                     </svg>
                                 </span>
                             </a>
-
                             <!-- Linkedin -->
-                            <a href="https://www.linkedin.com/in/zi-wei-yeo" class="hover:scale-150 hover:text-white"
-                                target="_blank">
+                            <a href="https://www.linkedin.com/in/zi-wei-yeo" class="social-btn" target="_blank">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                                         <path
@@ -89,9 +78,8 @@
                                 </span>
                             </a>
                             <!-- Whatsapp -->
-
-                            <a href="https://api.whatsapp.com/send?phone=60182175889"
-                                class="hover:scale-150 hover:text-white" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=60182175889" class="social-btn"
+                                target="_blank">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                                         <path
@@ -102,26 +90,20 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
-
-
         </div>
 
         <!-- Content -->
         <div
             class="w-full overflow-y-scroll md:w-3/4 p-9 md:px-24 md:pt-12 hide-scrollbar bg-gradient-to-r from-gray-800 via-gray-850 to-stone-950 md:from-stone-900 md:via-gray-950 md:to-stone-950">
-
             <div id="section-about">
-                <div class="mb-5 text-3xl font-bold text-gray-300">About</div>
+                <div class="content-header">About</div>
                 <div class="pb-5">
                     <p class="mb-3">As a <strong>passionate developer</strong> with expertise in <strong>PHP</strong>,
                         <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, I am always
                         seeking new and exciting opportunities to <strong>expand my skills</strong> and collaborate with
-                        <strong>innovative technical teams</strong>.</p>
+                        <strong>innovative technical teams</strong>.
+                    </p>
 
                     <p class="mb-3">With a solid foundation in <strong>web development</strong>, I am eager to build on
                         my experience by working with <strong>solution-focused teams</strong> who share my enthusiasm
@@ -136,65 +118,54 @@
                         people's lives.</p>
                 </div>
                 <div class="pt-5">
-                    <a class="button hover:text-gray-100" href="./documents/resume.pdf" target="_blank"><span>Get
+                    <a class="btn" href="./documents/resume.pdf" target="_blank"><span>Get
                             My CV</span></a>
                 </div>
 
             </div>
 
             <div id="section-experience" class="pt-10">
-                <div class="mt-10 mb-5 text-3xl font-bold text-gray-300">Experience</div>
-                <div class="pb-5 text-gray-400">
-                    <div class="mb-10 lg:flex lg:flex-row">
+                <div class="mt-10 content-header">Experience</div>
+                <div class="pb-5 ">
+                    <div class="exp-container">
                         <div class="basis-3/12">Jun 2024 - Present</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Senior IT Program Developer<span
-                                    class="mx-2">|</span>Seewe</div>
+                            <div class="item-header">Senior IT Program Developer<span class="mx-2">|</span>Seewe</div>
                             <div class="mb-5">Experienced in Laravel and jQuery, specializing in module development,
                                 feature enhancement, debugging, and client support. Proficient in swiftly resolving
                                 complex issues, dedicated to delivering high-quality code, and committed to ensuring
                                 customer satisfaction.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Laravel</span>
+                                    <span class="badge">Laravel</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                    <span class="badge">PHP</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                    <span class="badge">MySQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                    <span class="badge">Bootstrap</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Tailwind
+                                    <span class="badge">Tailwind
                                         CSS</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">JavaScript</span>
+                                    <span class="badge">JavaScript</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                    <span class="badge">jQuery</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                    <span class="badge">GitHub</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">REST
+                                    <span class="badge">REST
                                         API</span>
                                 </div>
                             </div>
@@ -202,57 +173,46 @@
                     </div>
                 </div>
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">May 2023 - May 2024</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Senior Software Developer<span
-                                    class="mx-2">|</span>C Speed</div>
-                            <div class="mb-5 text-gray-400">Specializing in Laravel and jQuery coding, responsible for
+                            <div class="item-header">Senior Software Developer<span class="mx-2">|</span>C Speed</div>
+                            <div class="mb-5 ">Specializing in Laravel and jQuery coding, responsible for
                                 developing new systems, modules, and enhancements, as well as debugging and supporting
                                 clients with technical challenges. With extensive experience in software development,
                                 adept at swiftly resolving complex technical issues, and committed to delivering
                                 high-quality code and ensuring customer satisfaction.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Laravel</span>
+                                    <span class="badge">Laravel</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Livewire</span>
+                                    <span class="badge">Livewire</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                    <span class="badge">PHP</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                    <span class="badge">MySQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                    <span class="badge">Bootstrap</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Tailwind
+                                    <span class="badge">Tailwind
                                         CSS</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                    <span class="badge">jQuery</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Gitlab</span>
+                                    <span class="badge">Gitlab</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">REST
+                                    <span class="badge">REST
                                         API</span>
                                 </div>
                             </div>
@@ -263,47 +223,38 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Sep 2022 - Apr 2023</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Software Developer<span
-                                    class="mx-2">|</span>JS TOP</div>
-                            <div class="mb-5 text-gray-400">Specialize in writing back-end code and building efficient
+                            <div class="item-header">Software Developer<span class="mx-2">|</span>JS TOP</div>
+                            <div class="mb-5 ">Specialize in writing back-end code and building efficient
                                 PHP modules, as well as developing back-end portals with optimized databases. My
                                 responsibilities include troubleshooting application and code issues, and updating and
                                 altering application features to enhance performance.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                    <span class="badge">PHP</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                    <span class="badge">MySQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                    <span class="badge">Bootstrap</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                    <span class="badge">jQuery</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                    <span class="badge">GitHub</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">WordPress</span>
+                                    <span class="badge">WordPress</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Google
+                                    <span class="badge">Google
                                         Analytics</span>
                                 </div>
                             </div>
@@ -312,47 +263,38 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Dec 2018 - Aug 2022</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Operation & IT Manager<span
-                                    class="mx-2">|</span>Deliboy</div>
-                            <div class="mb-5 text-gray-400">Developed landing pages using WordPress, and built back-end
+                            <div class="item-header">Operation & IT Manager<span class="mx-2">|</span>Deliboy</div>
+                            <div class="mb-5 ">Developed landing pages using WordPress, and built back-end
                                 and reporting systems utilizing PHP, JavaScript, and MySQL. My experience includes
                                 researching and optimizing system operation flows, managing logistic operations, and
                                 handling Facebook pages and ads.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                    <span class="badge">PHP</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                    <span class="badge">MySQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                    <span class="badge">Bootstrap</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                    <span class="badge">jQuery</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                    <span class="badge">GitHub</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">WordPress</span>
+                                    <span class="badge">WordPress</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Google
+                                    <span class="badge">Google
                                         Analytics</span>
                                 </div>
                             </div>
@@ -361,29 +303,25 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Oct 2017 - Nov 2018</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Manager System Analysis<span
-                                    class="mx-2">|</span>MIG</div>
-                            <div class="mb-5 text-gray-400">Collaborate with developers to produce new systems and
+                            <div class="item-header">Manager System Analysis<span class="mx-2">|</span>MIG</div>
+                            <div class="mb-5 ">Collaborate with developers to produce new systems and
                                 consult with colleagues to address their IT needs. My responsibilities include
                                 developing new functionality for existing systems, selecting and installing new software
                                 and hardware, and validating changes through system testing. I also examine and evaluate
                                 current systems, train end users, and write instruction manuals.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MS
+                                    <span class="badge">MS
                                         SQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                    <span class="badge">Bootstrap</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                             </div>
                         </div>
@@ -391,33 +329,28 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Aug 2016 - Sep 2017</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">System Analysis<span
-                                    class="mx-2">|</span>WINIGO</div>
-                            <div class="mb-5 text-gray-400">Proficient in using the Active Report Reporting System and
+                            <div class="item-header">System Analysis<span class="mx-2">|</span>WINIGO</div>
+                            <div class="mb-5 ">Proficient in using the Active Report Reporting System and
                                 Microsoft Visual Basic 6.0. My experience includes analyzing POS and CMS system
                                 workflows and requirements, developing and maintaining POS systems, and integrating data
                                 with shopping mall servers and accounting systems. Additionally, I handle online
                                 reporting systems.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MS
+                                    <span class="badge">MS
                                         SQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">CSS</span>
+                                    <span class="badge">CSS</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Visual
+                                    <span class="badge">Visualflex flex-wrap pb-5
                                         Basic</span>
                                 </div>
                             </div>
@@ -426,32 +359,27 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Oct 2012 - Aug 2016</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">Senior System Support<span
-                                    class="mx-2">|</span>SIS POS</div>
-                            <div class="mb-5 text-gray-400">Handle research and development for POS system bugs and
+                            <div class="item-header">Senior System Support<span class="mx-2">|</span>SIS POS</div>
+                            <div class="mb-5 ">Handle research and development for POS system bugs and
                                 enhancements, set up connections and transfer transactions between HQ and outlets, and
                                 modify reports using Crystal Reports. Additionally, I troubleshoot HQ POS system issues
                                 and provide customer service both on-site and by phone.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MS
+                                    <span class="badge">MS
                                         SQL</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">CSS</span>
+                                    <span class="badge">CSS</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Windows
+                                    <span class="badge">Windows
                                         Server</span>
                                 </div>
                             </div>
@@ -460,23 +388,21 @@
                 </div>
 
                 <div>
-                    <div class="mb-10 lg:flex lg:flex-row">
+                    <div class="exp-container">
                         <div class="basis-3/12">Jun 2010 - Sep 2012</div>
                         <div class="basis-9/12">
-                            <div class="mb-2 font-semibold text-gray-300">IT Support<span class="mx-2">|</span>PPG</div>
-                            <div class="mb-5 text-gray-400">Inspect landing pages, product information, checkout
+                            <div class="item-header">IT Support<span class="mx-2">|</span>PPG</div>
+                            <div class="mb-5 ">Inspect landing pages, product information, checkout
                                 options, and other website-related systems to ensure their visual appeal, accuracy, and
                                 ease of use. I assist in decisions regarding promotions, such as discounted offers and
                                 affordable bulk packages. Additionally, I identify, troubleshoot, and analyze
                                 computer-related issues.</div>
                             <div class="flex flex-wrap">
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">CSS</span>
+                                    <span class="badge">CSS</span>
                                 </div>
                                 <div class="mb-1">
-                                    <span
-                                        class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                    <span class="badge">HTML</span>
                                 </div>
                             </div>
                         </div>
@@ -485,22 +411,22 @@
             </div>
 
             <div id="section-education" class="pt-10">
-                <div class="mt-10 mb-5 text-3xl font-bold text-gray-300">Education</div>
-                <div class="pb-5 text-gray-400">
+                <div class="mt-10 content-header">Education</div>
+                <div class="pb-5 ">
                     <div>
-                        <div class="mb-10 lg:flex lg:flex-row">
+                        <div class="exp-container">
                             <div class="basis-3/12">Jan 2005 - Dec 2009</div>
                             <div class="basis-9/12">
-                                <div class="mb-2 font-semibold text-gray-300">Jinan University, Guangzhou, China</div>
+                                <div class="item-header">Jinan University, Guangzhou, China</div>
                                 <div>Bachelor's degree, Biotechnology</div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="mb-10 lg:flex lg:flex-row">
+                        <div class="exp-container">
                             <div class="basis-3/12">Jan 1999 - Dec 2004</div>
                             <div class="basis-9/12">
-                                <div class="mb-2 font-semibold text-gray-300">Chung Hwa Independent High School,
+                                <div class="item-header">Chung Hwa Independent High School,
                                     Kelantan
                                 </div>
                                 <div>UEC</div>
@@ -511,21 +437,20 @@
             </div>
 
             <div id="section-skill" class="pt-10">
-                <div class="mt-10 mb-5 text-3xl font-bold text-gray-300">Skills</div>
+                <div class="mt-10 content-header">Skills</div>
                 <div>
                     <div class="relative flex mb-5">
                         <div class="w-10/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-red-300 rounded dark:bg-gray-700 dark:text-red-300 me-2">
-                                <svg class="w-8 h-4 me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            <span class="border-red-300 progress-bar dark:text-red-300 ">
+                                <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                     viewBox="0 0 512 512">
                                     <path
                                         d="M504.4 115.8a5.7 5.7 0 0 0 -.3-.7 8.5 8.5 0 0 0 -.5-1.3 6 6 0 0 0 -.5-.7 9.4 9.4 0 0 0 -.7-.9c-.2-.2-.5-.4-.8-.6a8.8 8.8 0 0 0 -.9-.7L404.4 55.6a8 8 0 0 0 -8 0L300.1 111h0a8.1 8.1 0 0 0 -.9 .7 7.7 7.7 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .2-.4 .5-.5 .7a9.7 9.7 0 0 0 -.5 1.3c-.1 .2-.2 .4-.3 .7a8.1 8.1 0 0 0 -.3 2.1V223.2l-80.2 46.2V63.4a7.8 7.8 0 0 0 -.3-2.1c-.1-.2-.2-.5-.3-.7a8.4 8.4 0 0 0 -.5-1.2c-.1-.3-.4-.5-.5-.7a9.4 9.4 0 0 0 -.7-.9 9.5 9.5 0 0 0 -.8-.6 9.8 9.8 0 0 0 -.9-.7h0L115.6 1.1a8 8 0 0 0 -8 0L11.3 56.5h0a6.5 6.5 0 0 0 -.9 .7 7.8 7.8 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .3-.4 .5-.6 .7a7.9 7.9 0 0 0 -.5 1.2 6.5 6.5 0 0 0 -.3 .7 8.2 8.2 0 0 0 -.3 2.1v329.7a8 8 0 0 0 4 7l192.5 110.8a8.8 8.8 0 0 0 1.3 .5c.2 .1 .4 .2 .6 .3a7.9 7.9 0 0 0 4.1 0c.2-.1 .4-.2 .6-.2a8.6 8.6 0 0 0 1.4-.6L404.4 400.1a8 8 0 0 0 4-7V287.9l92.2-53.1a8 8 0 0 0 4-7V117.9A8.6 8.6 0 0 0 504.4 115.8zM111.6 17.3h0l80.2 46.2-80.2 46.2L31.4 63.4zm88.3 60V278.6l-46.5 26.8-33.7 19.4V123.5l46.5-26.8zm0 412.8L23.4 388.5V77.3L57.1 96.7l46.5 26.8V338.7a6.9 6.9 0 0 0 .1 .9 8 8 0 0 0 .2 1.2h0a5.9 5.9 0 0 0 .4 .9 6.4 6.4 0 0 0 .4 1v0a8.5 8.5 0 0 0 .6 .8 7.6 7.6 0 0 0 .7 .8l0 0c.2 .2 .5 .4 .8 .6a8.9 8.9 0 0 0 .9 .7l0 0 0 0 92.2 52.2zm8-106.2-80.1-45.3 84.1-48.4 92.3-53.1 80.1 46.1-58.8 33.6zm184.5 4.6L215.9 490.1V397.8L346.6 323.2l45.8-26.2zm0-119.1L358.7 250l-46.5-26.8V131.8l33.7 19.4L392.4 178zm8-105.3-80.2-46.2 80.2-46.2 80.2 46.2zm8 105.3V178L455 151.2l33.7-19.4v91.4h0z" />
                                 </svg>
                                 Laravel
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">8 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">8 / 10</span>
                             </div>
                         </div>
                         <div class="w-2/12"></div>
@@ -533,17 +458,16 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-10/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-purple-300 rounded dark:bg-gray-700 dark:text-purple-300 me-2">
-                                <svg class="w-8 h-4 me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            <span class="border-purple-300 progress-bar dark:text-purple-300 ">
+                                <svg class="skill-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                     viewBox="0 0 512 512">
                                     <path
                                         d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
                                 </svg>
                                 PHP
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">8 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">8 / 10</span>
                             </div>
                         </div>
                         <div class="w-2/12"></div>
@@ -551,17 +475,16 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-7/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-yellow-300 rounded dark:bg-gray-700 dark:text-yellow-300 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            <span class="border-yellow-300 progress-bar dark:text-yellow-300">
+                                <svg class="skill-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 448 512">
                                     <path
                                         d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
                                 </svg>
                                 JavaScript
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">5 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">5 / 10</span>
                             </div>
                         </div>
                         <div class="w-5/12"></div>
@@ -569,9 +492,8 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-9/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border rounded dark:bg-gray-700 dark:text-cyan-500 border-cyan-500 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            <span class="progress-bar dark:text-cyan-500 border-cyan-500 ">
+                                <svg class="skill-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                                     viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"
                                     width="512" height="512">
@@ -581,12 +503,11 @@
                                         <path style="fill-rule:evenodd;clip-rule:evenodd;"
                                             d="M22.107,18.442c-1.307-0.033-2.318,0.098-3.167,0.457   c-0.245,0.098-0.636,0.098-0.67,0.408c0.131,0.13,0.147,0.342,0.262,0.523c0.196,0.326,0.537,0.766,0.848,0.996   c0.343,0.261,0.686,0.521,1.045,0.75c0.636,0.393,1.355,0.621,1.974,1.013c0.36,0.228,0.718,0.522,1.079,0.767   c0.179,0.13,0.292,0.343,0.521,0.424V23.73c-0.115-0.146-0.147-0.359-0.261-0.523c-0.163-0.162-0.327-0.31-0.49-0.472   c-0.474-0.637-1.062-1.191-1.697-1.648c-0.523-0.36-1.666-0.85-1.877-1.452c0,0-0.017-0.017-0.033-0.033   c0.359-0.033,0.784-0.164,1.127-0.263c0.554-0.146,1.06-0.113,1.631-0.26c0.262-0.066,0.523-0.148,0.785-0.228v-0.148   c-0.295-0.293-0.506-0.686-0.817-0.963c-0.832-0.718-1.747-1.419-2.693-2.008c-0.507-0.327-1.16-0.538-1.699-0.816   c-0.195-0.098-0.521-0.146-0.636-0.311c-0.294-0.359-0.458-0.832-0.67-1.257c-0.473-0.897-0.931-1.892-1.338-2.84   c-0.294-0.636-0.473-1.272-0.832-1.86c-1.682-2.775-3.51-4.456-6.317-6.105C7.579,2.2,6.861,2.053,6.094,1.874   C5.685,1.856,5.278,1.825,4.87,1.809C4.608,1.694,4.346,1.384,4.118,1.237c-0.931-0.587-3.329-1.86-4.015-0.179   c-0.441,1.062,0.653,2.106,1.029,2.645c0.277,0.375,0.637,0.8,0.832,1.224C2.078,5.204,2.11,5.498,2.225,5.791   c0.261,0.718,0.505,1.518,0.849,2.188C3.253,8.322,3.449,8.682,3.677,8.99c0.132,0.181,0.36,0.261,0.409,0.556   C3.858,9.872,3.84,10.362,3.71,10.77c-0.587,1.845-0.359,4.13,0.474,5.484c0.261,0.408,0.881,1.306,1.714,0.963   c0.734-0.293,0.571-1.224,0.783-2.039c0.049-0.197,0.016-0.327,0.114-0.457v0.033c0.228,0.456,0.457,0.896,0.67,1.355   c0.506,0.799,1.387,1.632,2.123,2.186c0.391,0.295,0.701,0.8,1.191,0.98v-0.049h-0.032c-0.098-0.146-0.245-0.212-0.375-0.326   c-0.294-0.294-0.62-0.653-0.849-0.98c-0.685-0.914-1.29-1.926-1.828-2.971c-0.262-0.507-0.49-1.062-0.702-1.567   c-0.098-0.195-0.098-0.49-0.261-0.587c-0.246,0.359-0.604,0.669-0.783,1.109c-0.31,0.703-0.343,1.568-0.458,2.466   c-0.065,0.017-0.032,0-0.065,0.032c-0.522-0.13-0.701-0.669-0.898-1.125c-0.489-1.16-0.572-3.021-0.147-4.36   c0.114-0.342,0.605-1.419,0.408-1.746C4.689,8.859,4.363,8.682,4.184,8.436c-0.212-0.31-0.442-0.701-0.587-1.045   c-0.392-0.914-0.589-1.926-1.012-2.84c-0.196-0.425-0.54-0.866-0.816-1.257C1.458,2.853,1.115,2.543,0.87,2.021   c-0.081-0.18-0.195-0.474-0.065-0.669c0.032-0.131,0.098-0.18,0.229-0.213C1.245,0.96,1.85,1.188,2.061,1.286   C2.666,1.53,3.172,1.76,3.677,2.102c0.229,0.164,0.474,0.474,0.767,0.556h0.343c0.522,0.113,1.11,0.032,1.6,0.179   c0.864,0.277,1.648,0.685,2.35,1.126c2.138,1.355,3.901,3.282,5.092,5.583c0.196,0.375,0.279,0.718,0.458,1.109   c0.343,0.802,0.768,1.618,1.11,2.4c0.343,0.767,0.67,1.55,1.16,2.188c0.244,0.342,1.224,0.522,1.665,0.702   c0.326,0.146,0.832,0.277,1.126,0.456c0.555,0.342,1.109,0.735,1.632,1.111C21.241,17.708,22.058,18.115,22.107,18.442   L22.107,18.442z" />
                                     </g>
-
                                 </svg>
                                 MySQL
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">7 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">7 / 10</span>
                             </div>
                         </div>
                         <div class="w-2/12"></div>
@@ -594,9 +515,8 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-8/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-blue-400 rounded dark:bg-gray-700 dark:text-blue-400 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            <span class="border-blue-400 progress-bar dark:text-blue-400">
+                                <svg class="skill-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                     enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="jquery">
                                     <path
                                         d="M1.406,16.346c0.023,0.052,0.049,0.1,0.077,0.148c0.013,0.028,0.031,0.057,0.047,0.083c0.026,0.052,0.054,0.102,0.081,0.152l0.157,0.264c0.029,0.049,0.057,0.097,0.09,0.145c0.055,0.094,0.12,0.186,0.177,0.28c0.026,0.039,0.05,0.078,0.079,0.117c0.11,0.171,0.21,0.313,0.317,0.451c0.076,0.103,0.152,0.204,0.234,0.305c0.027,0.038,0.057,0.076,0.085,0.114l0.221,0.268c0.027,0.031,0.054,0.067,0.083,0.099c0.098,0.118,0.202,0.232,0.306,0.348c0,0.002,0.003,0.004,0.005,0.007c0.129,0.162,0.268,0.306,0.42,0.434l0.004,0.004c0.08,0.082,0.16,0.163,0.245,0.243l0.101,0.097c0.111,0.104,0.222,0.207,0.339,0.307c0.002,0,0.003,0.002,0.005,0.003l0.057,0.05c0.102,0.089,0.205,0.177,0.31,0.259l0.125,0.105c0.085,0.068,0.173,0.132,0.26,0.199l0.136,0.104c0.093,0.07,0.192,0.138,0.287,0.206c0.035,0.025,0.07,0.05,0.106,0.073l0.029,0.023l0.281,0.184l0.12,0.08c0.147,0.094,0.293,0.182,0.439,0.27c0.042,0.021,0.084,0.044,0.123,0.068c0.108,0.062,0.22,0.125,0.329,0.182c0.06,0.034,0.122,0.063,0.184,0.094c0.075,0.042,0.153,0.083,0.233,0.125c0.022,0.007,0.04,0.014,0.058,0.024L7.56,22.257c0.033,0.015,0.064,0.031,0.096,0.047c0.12,0.06,0.245,0.117,0.375,0.173c0.024,0.01,0.05,0.02,0.076,0.034c0.144,0.063,0.288,0.123,0.437,0.181c0.034,0.01,0.07,0.027,0.105,0.04c0.135,0.051,0.274,0.103,0.412,0.152l0.05,0.018c0.153,0.052,0.304,0.102,0.46,0.149c0.036,0.01,0.073,0.023,0.111,0.033c0.159,0.048,0.313,0.105,0.474,0.135c10.273,1.863,13.258-6.146,13.258-6.146c-2.508,3.25-6.959,4.107-11.174,3.153c-0.156-0.036-0.312-0.086-0.47-0.132c-0.286-0.083-0.476-0.143-0.663-0.209l0.095,0.029l-0.062-0.024c-0.136-0.046-0.267-0.097-0.4-0.148c-0.025-0.011-0.062-0.025-0.099-0.038l-0.011-0.003c-0.147-0.059-0.29-0.119-0.432-0.182c-0.031-0.01-0.057-0.024-0.088-0.036c-0.262-0.116-0.381-0.172-0.5-0.23l0.138,0.061c-0.037-0.016-0.07-0.033-0.106-0.052c-0.094-0.044-0.188-0.094-0.28-0.141c-0.086-0.041-0.147-0.073-0.207-0.106l0.02,0.01c-0.113-0.06-0.226-0.125-0.34-0.186c-0.034-0.024-0.073-0.044-0.112-0.066c-0.216-0.126-0.359-0.215-0.502-0.306l0.063,0.038c-0.048-0.03-0.087-0.056-0.124-0.083l0.006,0.004c-0.123-0.076-0.221-0.141-0.316-0.208c-0.034-0.022-0.065-0.046-0.1-0.07c-0.128-0.088-0.224-0.157-0.318-0.228l0.024,0.017c-0.042-0.034-0.087-0.066-0.132-0.099c-0.088-0.069-0.177-0.135-0.265-0.207l-0.118-0.094c-0.127-0.102-0.233-0.191-0.337-0.282c-0.01-0.01-0.021-0.019-0.033-0.027l-0.001-0.001l-0.347-0.315l-0.1-0.094c-0.082-0.083-0.166-0.162-0.25-0.244l-0.097-0.1c-0.104-0.103-0.204-0.207-0.303-0.315l-0.006-0.007L5.45,16.138c-0.106-0.116-0.209-0.233-0.313-0.353c-0.027-0.031-0.052-0.064-0.08-0.097L4.83,15.413c-0.079-0.098-0.19-0.243-0.3-0.391l-0.04-0.056C2.152,11.79,1.306,7.407,3.177,3.811L1.525,5.9C-0.6,8.939-0.337,12.891,1.288,16.118C1.325,16.197,1.366,16.271,1.406,16.346z">
@@ -615,8 +535,8 @@
                                 </svg>
                                 jQuery
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">6 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">6 / 10</span>
                             </div>
                         </div>
                         <div class="w-4/12"></div>
@@ -624,17 +544,16 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-9/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-teal-400 rounded dark:bg-gray-700 dark:text-teal-400 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" viewBox="0 0 24 24"
+                            <span class="border-teal-400 progress-bar dark:text-teal-400">
+                                <svg class="skill-icon" fill="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z" />
                                 </svg>
                                 Tailwind CSS
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">7 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">7 / 10</span>
                             </div>
                         </div>
                         <div class="w-3/12"></div>
@@ -642,17 +561,16 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-9/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border rounded dark:bg-gray-700 dark:text-violet-400 border-violet-400 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" viewBox="0 0 24 24" role="img"
+                            <span class="progress-bar dark:text-violet-400 border-violet-400">
+                                <svg class="skill-icon" fill="currentColor" viewBox="0 0 24 24" role="img"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z" />
                                 </svg>
                                 Bootstrap CSS
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">7 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">7 / 10</span>
                             </div>
                         </div>
                         <div class="w-3/12"></div>
@@ -660,9 +578,8 @@
 
                     <div class="relative flex mb-5">
                         <div class="w-11/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border border-orange-400 rounded dark:bg-gray-700 dark:text-orange-400 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" viewBox="0 0 24 24"
+                            <span class="border-orange-400 progress-bar dark:text-orange-400">
+                                <svg class="skill-icon" fill="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
                                         <path
@@ -684,16 +601,15 @@
                                 HTML 5
                             </span>
                         </div>
-                        <div class="absolute top-0 right-0 mt-2 mr-4">
-                            <span class="px-2 py-1 text-gray-100 rounded">9 / 10</span>
+                        <div class="skill-score-box">
+                            <span class="skill-score-text">9 / 10</span>
                         </div>
                     </div>
 
                     <div class="relative flex mb-5">
                         <div class="w-9/12">
-                            <span
-                                class="inline-flex items-center w-full p-2 mb-2 font-medium text-center border rounded dark:bg-gray-700 dark:text-sky-300 border-sky-300 me-2">
-                                <svg class="w-8 h-4 me-2" fill="currentColor" version="1.1" id="_x32_"
+                            <span class="progress-bar dark:text-sky-300 border-sky-300">
+                                <svg class="skill-icon" fill="currentColor" version="1.1" id="_x32_"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 512 512" xml:space="preserve">
 
@@ -718,345 +634,285 @@
                                 </svg>
                                 WordPress
                             </span>
-                            <div class="absolute top-0 right-0 mt-2 mr-4">
-                                <span class="px-2 py-1 text-gray-100 rounded">7 / 10</span>
+                            <div class="skill-score-box">
+                                <span class="skill-score-text">7 / 10</span>
                             </div>
                         </div>
                         <div class="w-3/12"></div>
                     </div>
-
-
                 </div>
-
             </div>
 
             <div id="section-project" class="pt-10">
-                <div class="mt-10 mb-5 text-3xl font-bold text-gray-300">Projects</div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="mt-10 content-header">Projects</div>
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96"
+                        <img class="project-image"
                             src="https://github.com/smallvi/yoyo_popup/blob/main/images/success_yoyo_popup.png?raw=true"
                             alt="Yoyo Popup">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Yoyo Popup</div>
-                        <div class="mb-3 text-gray-400 ">Yoyo Popup is a customizable alert popup plugin that works
+                        <div class="item-header">Yoyo Popup</div>
+                        <div class="mb-3 ">Yoyo Popup is a customizable alert popup plugin that works
                             without any dependencies. It's designed to be easy to use and highly customizable, allowing
                             you to create stylish and functional alert popups for your website or application.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">JavaScript</span>
+                                <span class="badge">JavaScript</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                <span class="badge">GitHub</span>
                             </div>
                         </div>
-                        <a href="https://smallvi.github.io/yoyo_popup/" class="button hover:text-gray-100"
-                            target="_blank"><span>View
+                        <a href="https://smallvi.github.io/yoyo_popup/" class="btn" target="_blank"><span>View
                                 Demo</span></a>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96"
-                            src="./images/sample_yoyo_toast.png?raw=true" alt="Yoyo Toast">
+                        <img class="project-image" src="./images/sample_yoyo_toast.png?raw=true" alt="Yoyo Toast">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Yoyo Toast</div>
-                        <div class="mb-3 text-gray-400">Yoyo Toast is a customizable toast notification plugin that
+                        <div class="item-header">Yoyo Toast</div>
+                        <div class="mb-3 ">Yoyo Toast is a customizable toast notification plugin that
                             operates without any dependencies. It's designed for simplicity and flexibility, enabling
                             you to create sleek and effective toast notifications for your website or application.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">JavaScript</span>
+                                <span class="badge">JavaScript</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                <span class="badge">GitHub</span>
                             </div>
                         </div>
-                        <a href="https://smallvi.github.io/yoyo_toast/" class="button hover:text-gray-100"
-                            target="_blank"><span>View
+                        <a href="https://smallvi.github.io/yoyo_toast/" class="btn" target="_blank"><span>View
                                 Demo</span></a>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96"
+                        <img class="project-image"
                             src="https://github.com/smallvi/yoyo-tooltip/blob/main/images/sample_yoyo_tooltip.png?raw=true"
                             alt="Yoyo Tooltip">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Yoyo Tooltip</div>
-                        <div class="mb-3 text-gray-400">Yoyo Tooltip is a customizable tooltip plugin that operates
+                        <div class="item-header">Yoyo Tooltip</div>
+                        <div class="mb-3 ">Yoyo Tooltip is a customizable tooltip plugin that operates
                             without any dependencies. It’s designed for ease of use and flexibility, allowing you to add
                             stylish and functional tooltips to your website or application.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">JavaScript</span>
+                                <span class="badge">JavaScript</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                <span class="badge">GitHub</span>
                             </div>
                         </div>
-                        <a href="https://smallvi.github.io/yoyo-tooltip/" class="button hover:text-gray-100"
-                            target="_blank"><span>View
+                        <a href="https://smallvi.github.io/yoyo-tooltip/" class="btn" target="_blank"><span>View
                                 Demo</span></a>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96"
-                            src="./images/financial_management_system.png" alt="Cargo Connect">
+                        <img class="project-image" src="./images/financial_management_system.png" alt="Cargo Connect">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Financial Management System</div>
-                        <div class="mb-3 text-gray-400">The Financial Management System is a comprehensive platform
+                        <div class="item-header">Financial Management System</div>
+                        <div class="mb-3 ">The Financial Management System is a comprehensive platform
                             designed to facilitate seamless fund transactions and management for both individual users
                             and businesses. Its key modules include funding, top-up, withdrawal, termination,
                             nomination, and refund functionalities.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Laravel</span>
+                                <span class="badge">Laravel</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                <span class="badge">MySQL</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96" src="./images/ticketing_system.png"
-                            alt="Cargo Connect">
+                        <img class="project-image" src="./images/ticketing_system.png" alt="Cargo Connect">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Online Ferry Ticketing System</div>
-                        <div class="mb-3 text-gray-400">The Online Ferry Ticketing System is designed to facilitate
+                        <div class="item-header">Online Ferry Ticketing System</div>
+                        <div class="mb-3 ">The Online Ferry Ticketing System is designed to facilitate
                             ticket sales for ferry services, offering single-trip tickets, round-trip tickets, and
                             monthly passes. It operates with a central headquarters (HQ) and two port locations, with
                             data synchronized between the ports and the HQ.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Laravel</span>
+                                <span class="badge">Laravel</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                <span class="badge">MySQL</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96"
-                            src="./images/visitor_tracking_system.png" alt="Visitor Tracking System">
+                        <img class="project-image" src="./images/visitor_tracking_system.png"
+                            alt="Visitor Tracking System">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Visitor Tracking System</div>
-                        <div class="mb-3 text-gray-400">The Visitor Tracking System is a comprehensive web-based
+                        <div class="item-header">Visitor Tracking System</div>
+                        <div class="mb-3 ">The Visitor Tracking System is a comprehensive web-based
                             application developed using Laravel, designed to function similarly to Google Analytics. It
                             provides detailed insights into website traffic and user behavior, helping businesses
                             optimize their online presence.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Laravel</span>
+                                <span class="badge">Laravel</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                <span class="badge">MySQL</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">GitHub</span>
+                                <span class="badge">GitHub</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96" src="./images/shipping_fee_calc.jpeg"
+                        <img class="project-image" src="./images/shipping_fee_calc.jpeg"
                             alt="International Shipping Fee Calculator">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">International Shipping Fee Calculator</div>
-                        <div class="mb-3 text-gray-400">The Shipping Fee Calculator is a web-based application developed
+                        <div class="item-header">International Shipping Fee Calculator</div>
+                        <div class="mb-3 ">The Shipping Fee Calculator is a web-based application developed
                             using PHP, jQuery, HTML, and Bootstrap. It supports bilingual functionality and allows users
                             to calculate shipping fees for both Air Freight and Sea Freight based on weight or volume
                             (m³).</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                         </div>
-                        <a href="https://calculator.deliboy.com.my/" class="button hover:text-gray-100"
-                            target="_blank"><span>View Project</span></a>
+                        <a href="https://calculator.deliboy.com.my/" class="btn" target="_blank"><span>View
+                                Project</span></a>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96" src="./images/popup_banner_manager.jpeg"
-                            alt="Popup Banner Manager">
+                        <img class="project-image" src="./images/popup_banner_manager.jpeg" alt="Popup Banner Manager">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Popup Banner Manager</div>
-                        <div class="mb-3 text-gray-400">The Popup Banner Manager is a sophisticated web-based
+                        <div class="item-header">Popup Banner Manager</div>
+                        <div class="mb-3 ">The Popup Banner Manager is a sophisticated web-based
                             application developed using PHP (MVC Architecture), jQuery, MySQL, HTML, and Bootstrap. It
                             is designed to display customizable pop-up banners on websites, controlled by a specific
                             domain name through an attached code snippet.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                <span class="badge">MySQL</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 border border-blue-400 rounded lg:flex lg:flex-row">
+                <div class="project-item-container">
                     <div>
-                        <img class="object-cover w-full h-64 lg:h-full lg:w-96" src="./images/cargo_connect.jpeg"
-                            alt="Cargo Connect">
+                        <img class="project-image" src="./images/cargo_connect.jpeg" alt="Cargo Connect">
                     </div>
                     <div class="p-8 basis-10/12">
-                        <div class="mb-2 font-semibold text-gray-300">Cargo Connect</div>
-                        <div class="mb-3 text-gray-400">Cargo Connect is a web-based application designed for
+                        <div class="item-header">Cargo Connect</div>
+                        <div class="mb-3 ">Cargo Connect is a web-based application designed for
                             efficient cargo management and tracking, developed using PHP with an MVC architecture,
                             jQuery, MySQL, HTML, and Bootstrap.</div>
                         <div class="flex flex-wrap pb-5 mb-4">
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">PHP</span>
+                                <span class="badge">PHP</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">MySQL</span>
+                                <span class="badge">MySQL</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">jQuery</span>
+                                <span class="badge">jQuery</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">HTML</span>
+                                <span class="badge">HTML</span>
                             </div>
                             <div class="mb-1">
-                                <span
-                                    class="text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300">Bootstrap</span>
+                                <span class="badge">Bootstrap</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <!-- footer -->
             <footer class="w-full p-4 text-center">© 2024 Zi Wei Yeo</footer>
         </div>
-
-
     </div>
-
-
     <script src="./scripts.js"></script>
-
 </body>
 
 </html>

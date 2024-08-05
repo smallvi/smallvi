@@ -62,3 +62,55 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.btn {
+    @apply inline-block px-4 py-2 transition ease-in-out delay-150 button hover:text-gray-100;
+}
+
+.badge {
+    @apply text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-300 border border-blue-300;
+}
+
+.progress-bar {
+    @apply inline-flex items-center w-full p-2 mb-2 font-medium text-center border rounded dark:bg-gray-700 me-2;
+}
+
+.content-header {
+    @apply mb-5 text-3xl font-bold text-gray-300;
+}
+
+.item-header {
+    @apply mb-2 font-semibold text-gray-300;
+}
+
+body {
+    @apply text-gray-400 noto;
+}
+
+.social-btn {
+    @apply hover:scale-150 hover:text-white;
+}
+
+.skill-icon {
+    @apply w-8 h-4 me-2;
+}
+
+.project-image {
+    @apply object-cover w-full h-64 lg:h-full lg:w-96;
+}
+
+.project-item-container {
+    @apply mb-10 border border-blue-400 rounded lg:flex lg:flex-row;
+}
+
+.exp-container {
+    @apply mb-10 lg:flex lg:flex-row;
+}
+
+.skill-score-box {
+    @apply absolute top-0 right-0 mt-2 mr-4;
+}
+
+.skill-score-text {
+    @apply px-2 py-1 text-gray-100 rounded;
+}

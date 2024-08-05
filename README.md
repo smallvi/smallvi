@@ -1,5 +1,5 @@
-- 👋 Hi, I’m Yeo
-- [My Portfolio] (https://smallvi.github.io/)
+👋 Hi, I’m Yeo
+[My Portfolio] (https://smallvi.github.io/)
 
 <!---
 smallvi/smallvi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

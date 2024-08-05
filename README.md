@@ -1,6 +1,5 @@
 - 👋 Hi, I’m Yeo
-- 👀 Skills: PHP, Laravel, Javascript, JQuery, REST API, Bootstrap, TailwindCSS, html5, MySql, MsSql
-- 📫 Reach me @ smallvi@gmail.com
+- [My Portfolio] (https://smallvi.github.io/)
 
 <!---
 smallvi/smallvi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

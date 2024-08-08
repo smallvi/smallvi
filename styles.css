@@ -96,7 +96,7 @@ body {
 }
 
 .project-image {
-    @apply object-cover w-full h-64 lg:h-96;
+    @apply object-cover w-full;
 }
 
 .project-item-container {

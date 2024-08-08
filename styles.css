@@ -96,11 +96,11 @@ body {
 }
 
 .project-image {
-    @apply object-cover w-full h-64 lg:h-full lg:w-96;
+    @apply object-cover w-full h-64 lg:h-96;
 }
 
 .project-item-container {
-    @apply mb-10 border border-blue-400 rounded lg:flex lg:flex-row;
+    @apply mb-10 border border-blue-400 rounded;
 }
 
 .exp-container {

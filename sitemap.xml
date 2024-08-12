@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://smallvi.github.io/</loc>
+  <lastmod>2024-08-12T03:48:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://smallvi.github.io/documents/resume.pdf</loc>
+  <lastmod>2024-08-12T03:48:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://smallvi.github.io/yoyo_popup/</loc>
+  <lastmod>2024-08-09T03:44:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://smallvi.github.io/yoyo_toast/</loc>
+  <lastmod>2024-08-09T03:38:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://smallvi.github.io/yoyo-tooltip/</loc>
+  <lastmod>2024-08-09T04:06:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

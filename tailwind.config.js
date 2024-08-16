@@ -4,6 +4,8 @@ module.exports = {
     "./index.html",
     "./scripts.js",
     "./styles.css",
+    "./demo/yoyoPopup/index.html",
+    "./demo/yoyoPopup/customStyles.css",
   ],
   theme: {
     extend: {},

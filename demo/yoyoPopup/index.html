@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79XVK7GNT8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-79XVK7GNT8');
-    </script>
-
     <meta name="keywords" content="Toast, Popup, Tooltip, Laravel">
     <meta name="description"
         content="Yoyo Popup is a customizable alert popup plugin that works without any dependencies. It's designed to be easy to use and highly customizable, allowing you to create stylish and functional alert popups for your website or application.">
@@ -43,134 +33,796 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/icon/favicon-16x16.png">
     <link rel="manifest" href="./images/icon/site.webmanifest">
 
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="customStyles.css">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+SC:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Noto+Sans+SC:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body style="font-family: Arial, sans-serif;">
-    <div class="container">
-        <h1 style="margin-bottom: 80px;">Yoyo Popup</h1>
-        <img class="floating-image" src="./images/yoyo_popup.png" style="margin-bottom: 50px;">
-        <button class="github-btn" style="margin-bottom: 50px;">
-            <a href="https://github.com/smallvi/yoyoPopup" target="_blank" class="github-link"
-                style="text-decoration: none;">
-                <div style="display:flex;">
-                    <svg fill="white" style="width:1.5rem;height:1.5rem" viewBox="0 0 496 512">
-                        <path
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                    </svg> <span style="color:white; margin-left: 10px;">GitHub</span>
-                </div>
-            </a>
-        </button>
+<body class="noto">
 
-        <div class="buttons" style="margin: 50px 10px;">
-            <button class="button" id="successBtn">Success, 5 sec</button>
-            <button class="button" id="dangerBtn">Danger, Static</button>
-            <button class="button" id="infoBtn">Info</button>
-            <button class="button" id="warningBtn">Warning</button>
-            <button class="button" id="questionBtn">Question</button>
+    <div class="flex flex-col md:flex-row">
+        <div
+            class="sticky p-4 md:pt-12 md:w-1/5 md:h-screen md:top-0 bg-gradient-to-r from-gray-800 via-gray-850 to-stone-950 md:bg-gradient-to-r md:from-gray-850 md:via-gray-950 md:to-stone-900">
+
+            <!-- Navigation -->
+            <div class="mb-10">
+                <div class="hidden md:block md:mt-10">
+                    <div><button href="#section-example" class="btn nav-link"><span>Example</span></button>
+                    </div>
+                    <div><button href="#section-installation" class="btn nav-link"><span>Installation</span></button>
+                    </div>
+                    <div><button href="#section-usage" class="btn nav-link"><span>Usage</span></button>
+                    </div>
+                    <div><button href="#section-param" class="btn nav-link"><span>Param</span></button>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+        <div
+            class="w-full overflow-y-scroll md:w-4/5 p-9 md:px-24 md:pt-12 hide-scrollbar bg-gradient-to-r from-gray-800 via-gray-850 to-stone-950 md:from-stone-900 md:via-gray-950 md:to-stone-950">
 
-        <div style="margin: 0 auto 60px auto;padding: 20px;">
-            <div class="browser_container browser_simple">
-                <div class="browser_top">
-                    <span class="browser_dot"></span>
-                    <span class="browser_dot"></span>
-                    <span class="browser_dot"></span>
-                    <div class="browser_top_center">Simple Yoyo Popup</div>
+            <div class="mb-36">
+                <h1 class="mb-12 text-5xl font-extrabold text-center text-gray-100 xl:text-7xl xl:text-left">Yoyo Popup
+                </h1>
+                <div class="flex flex-row mb-12">
+                    <div class="hidden my-auto xl:flex-col xl:block xl:w-1/2">
+                        <div class="inline-block px-3 py-1 mb-4 text-xl text-gray-200 bg-gray-800 rounded-full">
+                            Dependency
+                            Free</div>
+                        <div class="inline-block px-3 py-1 mb-4 text-xl text-gray-200 bg-gray-800 rounded-full">
+                            Customizable
+                        </div>
+                        <div class="inline-block px-3 py-1 mb-4 text-xl text-gray-200 bg-gray-800 rounded-full">Light
+                            Weight
+                        </div>
+                        <div class="inline-block px-3 py-1 mb-4 text-xl text-gray-200 bg-gray-800 rounded-full">Elegant
+                        </div>
+                        <div class="inline-block px-3 py-1 mb-4 text-xl text-gray-200 bg-gray-800 rounded-full">Easy to
+                            Use
+                        </div>
+                    </div>
+                    <div class="content-center w-full xl:w-1/2">
+                        <img class="m-auto floating-image" src="./images/yoyo_popup.png">
+                    </div>
                 </div>
 
-                <div class="browser_content">
-                    <p><span class="browser_function_color">showYoyoPopup</span>({</p>
-                    <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Done'</span><span class="browser_symbol_color">,</span></p>
-                    <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'success'</span><span class="browser_symbol_color">,</span></p>
-                    <p>});</p>
+                <div class="flex flex-wrap justify-center mb-12 text-gray-300 xl:hidden">
+                    <span class="px-3 py-1 mb-2 mr-2 text-sm bg-gray-800 rounded-full">Dependency Free</span>
+                    <span class="px-3 py-1 mb-2 mr-2 text-sm bg-gray-800 rounded-full">Customizable</span>
+                    <span class="px-3 py-1 mb-2 mr-2 text-sm bg-gray-800 rounded-full">Light Weight</span>
+                    <span class="px-3 py-1 mb-2 mr-2 text-sm bg-gray-800 rounded-full">Elegant</span>
+                    <span class="px-3 py-1 mb-2 mr-2 text-sm bg-gray-800 rounded-full">Easy to Use</span>
+                </div>
+
+                <div class="mb-12 text-center xl:text-left">
+                    <button class="px-5 py-2 mr-5 bg-gray-100 rounded hover:bg-gray-400">
+                        <a href="https://github.com/smallvi/yoyoPopup" target="_blank" class="no-underline">
+                            <div class="flex">
+                                <svg fill="text-gray-900" class="w-[1.5rem] h-[1.5rem]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                </svg> <span class="ml-3 font-bold text-gray-900">Star</span>
+                            </div>
+                        </a>
+                    </button>
+
+                    <button class="px-5 py-2 mr-5 bg-gray-100 rounded hover:bg-gray-400">
+                        <a href="https://github.com/smallvi/yoyoPopup/releases" target="_blank" class="no-underline">
+                            <div class="flex">
+                                <svg fill="text-gray-900" class="w-[1.5rem] h-[1.5rem]" viewBox="0 0 496 512">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                </svg> <span class="ml-3 font-bold text-gray-900">Download</span>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div id="section-example" class="mb-28">
+                <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Example</div>
+                <div class="flex flex-col xl:flex-row">
+                    <button class="p-5 mb-5 font-bold text-gray-700 bg-green-300 rounded xl:mr-5 hover:bg-green-400"
+                        id="successBtn">Success</button>
+                    <button class="p-5 mb-5 font-bold text-gray-700 bg-red-300 rounded xl:mr-5 hover:bg-red-400"
+                        id="dangerBtn">Danger</button>
+                    <button class="p-5 mb-5 font-bold text-gray-700 bg-blue-300 rounded xl:mr-5 hover:bg-blue-400"
+                        id="infoBtn">Info</button>
+                    <button class="p-5 mb-5 font-bold text-gray-700 bg-yellow-300 rounded xl:mr-5 hover:bg-yellow-400"
+                        id="warningBtn">Warning</button>
+                    <button class="p-5 mb-5 font-bold text-gray-700 bg-purple-300 rounded xl:mr-5 hover:bg-purple-400"
+                        id="questionBtn">Question</button>
+                </div>
+                <div>
+                    <div class="mb-12 browser_container w-full xl:w-[35rem] example" id="success_code">
+                        <div class="browser_top">
+                            <span class="bg-green-300 browser_dot"></span>
+                            <span class="bg-green-300 browser_dot"></span>
+                            <span class="bg-green-300 browser_dot"></span>
+                            <div class="browser_top_center">Success Popup</div>
+                        </div>
+
+                        <div class="browser_content">
+                            <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                            <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Created Successfully'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'success'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">timeOut<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">5000</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p>});</p>
+                        </div>
+
+                    </div>
+                    <div class="hidden mb-12 browser_container w-full xl:w-[35rem] example" id="danger_code">
+                        <div class="browser_top">
+                            <span class="bg-red-300 browser_dot"></span>
+                            <span class="bg-red-300 browser_dot"></span>
+                            <span class="bg-red-300 browser_dot"></span>
+                            <div class="browser_top_center">Danger Popup</div>
+                        </div>
+
+                        <div class="browser_content">
+                            <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+
+                            <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Are you sure you want to proceed?'</span><span
+                                    class="browser_symbol_color">,</span></p>
+
+                            <p class="browser_inline">subtext<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'This action cannot be undone.'</span><span
+                                    class="browser_symbol_color">,</span></p>
+
+                            <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'danger'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">isStatic<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">hasConfirmation<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">hasCancellation<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">confirmLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Yes, proceed'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">cancelLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Cancel'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Close'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline"><span class="browser_function_color">confirmFunction</span><span
+                                    class="browser_symbol_color">:</span> ()=>
+                                <span class="browser_function_color">functionConfirm</span>()<span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline"><span class="browser_function_color">cancelFunction</span><span
+                                    class="browser_symbol_color">:</span> ()=>
+                                <span class="browser_function_color">functionCancel</span>()<span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline"><span class="browser_function_color">closeFunction</span><span
+                                    class="browser_symbol_color">:</span> () => <span
+                                    class="browser_function_color">alert</span>(<span class="browser_value_color">'You
+                                    click Close'</span>)<span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p>});</p>
+                        </div>
+
+                    </div>
+                    <div class="hidden mb-12 browser_container w-full xl:w-[35rem] example" id="info_code">
+                        <div class="browser_top">
+                            <span class="bg-blue-300 browser_dot"></span>
+                            <span class="bg-blue-300 browser_dot"></span>
+                            <span class="bg-blue-300 browser_dot"></span>
+                            <div class="browser_top_center">Info Popup</div>
+                        </div>
+
+                        <div class="browser_content">
+                            <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                            <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'What is python?'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'info'</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">subtext<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Python is a type of large, non-venomous snake found in
+                                    Africa, Asia, and Australia. Pythons are known for their ability to constrict and
+                                    suffocate their prey before swallowing it whole. They are often found in
+                                    rainforests, grasslands, and swamps.'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p>});</p>
+                        </div>
+
+                    </div>
+                    <div class="hidden mb-12 browser_container w-full xl:w-[35rem] example" id="warning_code">
+                        <div class="browser_top">
+                            <span class="bg-yellow-300 browser_dot"></span>
+                            <span class="bg-yellow-300 browser_dot"></span>
+                            <span class="bg-yellow-300 browser_dot"></span>
+                            <div class="browser_top_center">Warning Popup</div>
+                        </div>
+
+                        <div class="browser_content">
+                            <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                            <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Warning: Changes you made may not be
+                                    saved.'</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'warning'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">hasConfirmation<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">confirmLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Yes, Continue'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline"><span class="browser_function_color">confirmFunction</span><span
+                                    class="browser_symbol_color">:</span> () => <span
+                                    class="browser_function_color">alert</span>(<span class="browser_value_color">'You
+                                    click Confirm!'</span>)<span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Close'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p class="browser_inline">isStatic<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+
+                            <p>});</p>
+                        </div>
+
+                    </div>
+                    <div class="hidden mb-12 browser_container w-full xl:w-[35rem] example" id="question_code">
+                        <div class="browser_top">
+                            <span class="bg-purple-300 browser_dot"></span>
+                            <span class="bg-purple-300 browser_dot"></span>
+                            <span class="bg-purple-300 browser_dot"></span>
+                            <div class="browser_top_center">Question Popup</div>
+                        </div>
+
+                        <div class="browser_content">
+                            <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                            <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Are you sure you want to log out?'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'question'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">hasConfirmation<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">confirmLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Log Out'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'Cancel'</span><span
+                                    class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline"><span class="browser_function_color">confirmFunction</span><span
+                                    class="browser_symbol_color">:</span> () => <span
+                                    class="browser_function_color">showYoyoPopup</span>({</p>
+                            <p class="browser_inline_2x">text<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'You
+                                    click log out!'</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline_2x">type<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">'info'</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p class="browser_inline">})<span class="browser_symbol_color">,</span></p>
+                            <p class="browser_inline">isStatic<span class="browser_symbol_color">:</span> <span
+                                    class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                            </p>
+                            <p>});</p>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
-        </div>
-        <div style="margin-bottom: 60px;padding: 20px;">
-            <div class="browser_container browser_advance">
-                <div class="browser_top">
-                    <span class="browser_dot"></span>
-                    <span class="browser_dot"></span>
-                    <span class="browser_dot"></span>
-                    <div class="browser_top_center">Advance Yoyo Popup</div>
+
+            <div id="section-installation" class="mb-28">
+                <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Installation</div>
+                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">Manual installation</div>
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[30rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">Download</div>
+                        </div>
+                        <div class="browser_content">
+                            <p>&lt;<span class="browser_function_color">script src</span>=<span
+                                    class="browser_value_color">"path/to/yoyoPopup.min.js"</span>&gt;&lt;/script&gt;</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="browser_content">
-                    <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">Using from a CDN</div>
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[54rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">CDN</div>
+                        </div>
+                        <div class="browser_content">
+                            <p class="break-words">&lt;<span class="browser_function_color">script src</span>=<span
+                                    class="browser_value_color">"https://cdn.jsdelivr.net/gh/smallvi/yoyoPopup/dist/yoyoPopup.min.js"</span>&gt;&lt;/<span
+                                    class="browser_function_color">script</span>&gt;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Are you sure you want to proceed?'</span><span
-                            class="browser_symbol_color">,</span></p>
+            <div id="section-usage" class="mb-28">
+                <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Usage</div>
 
-                    <p class="browser_inline">subtext<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'This action cannot be undone.'</span><span
-                            class="browser_symbol_color">,</span></p>
+                <div class="mb-4 text-lg font-bold text-gray-300">Call the `yoyoPopup` function after the page has
+                    loaded.</div>
 
-                    <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'danger'</span><span class="browser_symbol_color">,</span></p>
+                <div class="mb-12 browser_container w-full xl:w-[20rem]">
+                    <div class="browser_top">
+                        <span class="browser_dot"></span>
+                        <span class="browser_dot"></span>
+                        <span class="browser_dot"></span>
+                        <div class="browser_top_center">Simple Yoyo Popup</div>
+                    </div>
 
-                    <p class="browser_inline">isStatic<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">true</span><span class="browser_symbol_color">,</span></p>
+                    <div class="browser_content">
+                        <p><span class="browser_function_color">showYoyoPopup</span>({</p>
+                        <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'Done'</span><span class="browser_symbol_color">,</span>
+                        </p>
+                        <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'success'</span><span class="browser_symbol_color">,</span>
+                        </p>
+                        <p>});</p>
+                    </div>
 
-                    <p class="browser_inline">hasConfirmation<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">true</span><span class="browser_symbol_color">,</span></p>
+                </div>
 
-                    <p class="browser_inline">hasCancellation<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">true</span><span class="browser_symbol_color">,</span></p>
 
-                    <p class="browser_inline">confirmLabel<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Yes, proceed'</span><span class="browser_symbol_color">,</span>
-                    </p>
+                <div class="browser_container w-full xl:w-[35rem]">
+                    <div class="browser_top">
+                        <span class="browser_dot"></span>
+                        <span class="browser_dot"></span>
+                        <span class="browser_dot"></span>
+                        <div class="browser_top_center">Advance Yoyo Popup</div>
+                    </div>
 
-                    <p class="browser_inline">cancelLabel<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Cancel'</span><span class="browser_symbol_color">,</span>
-                    </p>
+                    <div class="browser_content">
+                        <p><span class="browser_function_color">showYoyoPopup</span>({</p>
 
-                    <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Close'</span><span class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">text<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'Are you sure you want to proceed?'</span><span
+                                class="browser_symbol_color">,</span></p>
 
-                    <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">'Close'</span><span class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">subtext<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'This action cannot be undone.'</span><span
+                                class="browser_symbol_color">,</span></p>
 
-                    <p class="browser_inline">timeOut<span class="browser_symbol_color">:</span> <span
-                            class="browser_value_color">5000</span><span class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">type<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'danger'</span><span class="browser_symbol_color">,</span>
+                        </p>
 
-                    <p class="browser_inline"><span class="browser_function_color">confirmFunction</span><span
-                            class="browser_symbol_color">:</span> ()=>
-                        <span class="browser_function_color">functionConfirm</span>()<span
-                            class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">isStatic<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                        </p>
 
-                    <p class="browser_inline"><span class="browser_function_color">cancelFunction</span><span
-                            class="browser_symbol_color">:</span> ()=>
-                        <span class="browser_function_color">functionCancel</span>()<span
-                            class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">hasConfirmation<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                        </p>
 
-                    <p class="browser_inline"><span class="browser_function_color">closeFunction</span><span
-                            class="browser_symbol_color">:</span> () => <span
-                            class="browser_function_color">alert</span>(<span class="browser_value_color">'You
-                            click Close'</span>)<span class="browser_symbol_color">,</span>
-                    </p>
+                        <p class="browser_inline">hasCancellation<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">true</span><span class="browser_symbol_color">,</span>
+                        </p>
 
-                    <p>});</p>
+                        <p class="browser_inline">confirmLabel<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'Yes, proceed'</span><span
+                                class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline">cancelLabel<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'Cancel'</span><span class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline">closeLabel<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">'Close'</span><span class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline">timeOut<span class="browser_symbol_color">:</span> <span
+                                class="browser_value_color">5000</span><span class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline"><span class="browser_function_color">confirmFunction</span><span
+                                class="browser_symbol_color">:</span> ()=>
+                            <span class="browser_function_color">functionConfirm</span>()<span
+                                class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline"><span class="browser_function_color">cancelFunction</span><span
+                                class="browser_symbol_color">:</span> ()=>
+                            <span class="browser_function_color">functionCancel</span>()<span
+                                class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p class="browser_inline"><span class="browser_function_color">closeFunction</span><span
+                                class="browser_symbol_color">:</span> () => <span
+                                class="browser_function_color">alert</span>(<span class="browser_value_color">'You
+                                click Close'</span>)<span class="browser_symbol_color">,</span>
+                        </p>
+
+                        <p>});</p>
+                    </div>
+
                 </div>
 
             </div>
-        </div>
 
-        <footer style="padding: 50px;color: white;">© 2024 Zi Wei Yeo</footer>
+            <div id="section-param" class="mb-28">
+                <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Params</div>
+                <section class="container">
+                    <div class="flex flex-col mt-6">
+                        <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 xl:-mx-8">
+                            <div class="inline-block min-w-full py-2 align-middle md:px-6 xl:px-8">
+                                <div class="overflow-hidden border border-gray-700 md:rounded-lg">
+
+                                    <table class="min-w-full divide-y divide-gray-700">
+                                        <thead class="bg-gray-800">
+                                            <tr>
+                                                <th scope="col"
+                                                    class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-400">
+                                                    <button class="flex items-center gap-x-3 focus:outline-none">
+                                                        <span>Argument</span>
+
+
+                                                    </button>
+                                                </th>
+
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-400">
+                                                    Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-gray-900 divide-y divide-gray-700">
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">text
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Mandatory</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Main text displayed
+                                                            in the popup</h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">subtext
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Additional text
+                                                            shown below the main text.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">type
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Icon type.
+                                                        </h4>
+                                                        <p class="text-gray-400">('info', 'question',
+                                                            'success', 'warning', 'danger')</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">title
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Title of the popup.
+                                                        </h4>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">isStatic
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Boolean indicating
+                                                            if the popup is static.
+                                                        </h4>
+                                                        <p class="text-gray-400"> (true, false)</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            hasConfirmation
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Boolean indicating
+                                                            if the popup includes a confirm button.
+                                                        </h4>
+                                                        <p class="text-gray-400"> (true, false)</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            hasCancellation
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Boolean indicating
+                                                            if the popup includes a cancel button.
+                                                        </h4>
+                                                        <p class="text-gray-400"> (true, false)</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            confirmLabel
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Text label for the
+                                                            confirm button.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            cancelLabel
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Text label for the
+                                                            cancel button.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            closeLabel
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Text label for the
+                                                            close button.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            formId
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">ID of the form to
+                                                            submit.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            confirmFunction
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Function to call
+                                                            when the confirm button is pressed.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            cancelFunction
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Function to call
+                                                            when the cancel button is pressed.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            closeFunction
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Function to call
+                                                            when the close button is pressed.
+                                                        </h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-4 py-4 text-sm font-medium ">
+                                                    <div>
+                                                        <h2 class="font-medium text-white ">
+                                                            timeOut
+                                                        </h2>
+                                                        <p class="text-sm font-normal text-gray-400">
+                                                            Optional</p>
+                                                    </div>
+                                                </td>
+                                                <td class="px-4 py-4 text-sm ">
+                                                    <div>
+                                                        <h4 class="text-gray-200">Auto-close the
+                                                            popup after a specified time.
+                                                        </h4>
+                                                        <p class="text-gray-400">(e.g., `1000` for 1
+                                                            second)</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="px-0 py-12 text-center text-gray-100 xl:text-left">© 2024 Zi Wei Yeo</footer>
+        </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/gh/smallvi/yoyoPopup/dist/yoyoPopup.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="/scripts.min.js"></script>
 </body>
 
 </html>

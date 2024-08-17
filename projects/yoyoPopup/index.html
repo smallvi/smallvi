@@ -132,15 +132,20 @@
             <div id="section-example" class="mb-28">
                 <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Example</div>
                 <div class="flex flex-col xl:flex-row">
-                    <button class="py-2 mb-5 font-bold text-gray-700 bg-green-300 rounded xl:px-10 xl:py-5 xl:mr-5 hover:bg-green-400"
+                    <button
+                        class="py-2 mb-5 font-bold text-gray-700 bg-green-300 rounded xl:px-10 xl:py-5 xl:mr-5 hover:bg-green-400"
                         id="successBtn">Success</button>
-                    <button class="px-10 py-2 mb-5 font-bold text-gray-700 bg-red-300 rounded xl:py-5 xl:mr-5 hover:bg-red-400"
+                    <button
+                        class="px-10 py-2 mb-5 font-bold text-gray-700 bg-red-300 rounded xl:py-5 xl:mr-5 hover:bg-red-400"
                         id="dangerBtn">Danger</button>
-                    <button class="px-10 py-2 mb-5 font-bold text-gray-700 bg-blue-300 rounded xl:py-5 xl:mr-5 hover:bg-blue-400"
+                    <button
+                        class="px-10 py-2 mb-5 font-bold text-gray-700 bg-blue-300 rounded xl:py-5 xl:mr-5 hover:bg-blue-400"
                         id="infoBtn">Info</button>
-                    <button class="px-10 py-2 mb-5 font-bold text-gray-700 bg-yellow-300 rounded xl:py-5 xl:mr-5 hover:bg-yellow-400"
+                    <button
+                        class="px-10 py-2 mb-5 font-bold text-gray-700 bg-yellow-300 rounded xl:py-5 xl:mr-5 hover:bg-yellow-400"
                         id="warningBtn">Warning</button>
-                    <button class="px-10 py-2 mb-5 font-bold text-gray-700 bg-purple-300 rounded xl:py-5 xl:mr-5 hover:bg-purple-400"
+                    <button
+                        class="px-10 py-2 mb-5 font-bold text-gray-700 bg-purple-300 rounded xl:py-5 xl:mr-5 hover:bg-purple-400"
                         id="questionBtn">Question</button>
                 </div>
                 <div>
@@ -370,25 +375,57 @@
 
             <div id="section-installation" class="mb-28">
                 <div class="mb-16 text-3xl font-bold text-center text-gray-200 xl:text-left">Installation</div>
-                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">Manual installation</div>
+
+                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">- npm</div>
                 <div class="mb-16">
-                    <div class="browser_container  w-full xl:w-[30rem]">
+                    <div class="browser_container  w-full xl:w-[18rem]">
                         <div class="browser_top">
                             <span class="browser_dot"></span>
                             <span class="browser_dot"></span>
                             <span class="browser_dot"></span>
-                            <div class="browser_top_center">Download</div>
+                            <div class="browser_top_center">install</div>
                         </div>
                         <div class="browser_content">
-                            <p>&lt;<span class="browser_function_color">script src</span>=<span
-                                    class="browser_value_color">"path/to/yoyoPopup.min.js"</span>&gt;&lt;/script&gt;</p>
+                            <p>npm install yoyo-popup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[52rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">Import ES6 Module</div>
+                        </div>
+                        <div class="browser_content">
+                            <p><span class="browser_keyword_color">import</span> { showYoyoPopup } <span
+                                    class="browser_keyword_color">from</span> <span
+                                    class="browser_value_color">'./node_modules/yoyo-popup/dist/yoyoPopup.min.mjs'</span>;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[48rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">HTML Tag</div>
+                        </div>
+                        <div class="browser_content">
+                            <p>&lt;<span class="browser_keyword_color">script</span> <span
+                                    class="browser_key_color">src</span>=<span
+                                    class="browser_value_color">"./node_modules/yoyo-popup/dist/yoyoPopup.min.js"</span>&gt;&lt;/<span
+                                    class="browser_keyword_color">script</span>&gt;</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">Using from a CDN</div>
+                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">- CDN</div>
                 <div class="mb-16">
-                    <div class="browser_container  w-full xl:w-[54rem]">
+                    <div class="browser_container  w-full xl:w-[56rem]">
                         <div class="browser_top">
                             <span class="browser_dot"></span>
                             <span class="browser_dot"></span>
@@ -396,13 +433,52 @@
                             <div class="browser_top_center">CDN</div>
                         </div>
                         <div class="browser_content">
-                            <p class="break-words">&lt;<span class="browser_function_color">script src</span>=<span
+                            <p class="break-words">&lt;<span class="browser_function_color"><span
+                                        class="browser_keyword_color">script</span> <span
+                                        class="browser_key_color">src</span></span>=<span
                                     class="browser_value_color">"https://cdn.jsdelivr.net/gh/smallvi/yoyoPopup/dist/yoyoPopup.min.js"</span>&gt;&lt;/<span
-                                    class="browser_function_color">script</span>&gt;
+                                    class="browser_keyword_color">script</span>&gt;
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="mb-4 text-lg font-bold text-center text-gray-300 xl:text-left">- Self Hosted</div>
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[32rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">Self Hosted</div>
+                        </div>
+                        <div class="browser_content">
+                            <p>&lt;<span class="browser_keyword_color">script</span> <span
+                                    class="browser_key_color">src</span>=<span
+                                    class="browser_value_color">"path/to/yoyoPopup.min.js"</span>&gt;&lt;/<span
+                                    class="browser_keyword_color">script</span>&gt;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <div class="browser_container  w-full xl:w-[38rem]">
+                        <div class="browser_top">
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <span class="browser_dot"></span>
+                            <div class="browser_top_center">Import ES6 Module</div>
+                        </div>
+                        <div class="browser_content">
+                            <p><span class="browser_keyword_color">import</span> { showYoyoPopup } <span
+                                    class="browser_keyword_color">from</span> <span
+                                    class="browser_value_color">'path/to/yoyoPopup.min.mjs'</span>;</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
             <div id="section-usage" class="mb-28">

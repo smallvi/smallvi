@@ -57,6 +57,14 @@
     color: #73dea5;
 }
 
+.browser_keyword_color {
+    color: rgba(78, 170, 255, 0.879);
+}
+
+.browser_key_color {
+    color: lightblue;
+}
+
 .browser_value_color {
     color: #d9ce6f;
 }

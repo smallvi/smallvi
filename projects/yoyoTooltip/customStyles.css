@@ -1,0 +1,149 @@
+.browser_dot {
+    height: 14px;
+    width: 14px;
+    background-color: #494949;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.browser_container {
+    border: 1px solid rgb(55 65 81);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-sizing: border-box;
+}
+
+.browser_top {
+    padding: 20px;
+    background: #0d120d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.browser_top_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999999;
+    margin: 0px;
+    font-size: 0.9rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.browser_content {
+    padding-top: 1px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    color: #e7e7e7;
+    background: #0d120d;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.browser_content p {
+    line-height: 24px;
+    margin: 0;
+}
+
+.browser_function_color {
+    color: #88b882;
+}
+
+.browser_keyword_color {
+    color: #b2d65e;
+}
+
+.browser_key_color {
+    color: #ed9c5a;
+}
+
+.browser_value_color {
+    color: #e8eb9d;
+}
+
+.browser_comment_color {
+    color: #6e6e6e;
+}
+
+.browser_symbol_color {
+    color: #d4b48c;
+}
+
+.browser_inline::before {
+    content: '\00a0';
+    margin-right: 30px;
+}
+
+.browser_inline_2x::before {
+    content: '\00a0';
+    margin-right: 60px;
+}
+
+.floating-image {
+    width: 500px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #141414;
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover span {
+    width: 1000%;
+    color: white;
+}
+
+.nav-link span {
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #2b3d4f;
+}
+
+.nav-link span:hover {
+  
+    color: rgb(255, 255, 255);
+}

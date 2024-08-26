@@ -8,6 +8,8 @@ module.exports = {
     "./projects/yoyoPopup/customStyles.css",
     "./projects/yoyoToast/index.html",
     "./projects/yoyoToast/customStyles.css",
+    "./projects/yoyoTooltip/index.html",
+    "./projects/yoyoTooltip/customStyles.css",
   ],
   theme: {
     extend: {},
